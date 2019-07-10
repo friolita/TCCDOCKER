@@ -14,7 +14,13 @@ if(isset($_POST['simpan'])){
 	$sekolah = $_POST['sekolah_asal'];
 	
 	// buat query update
-	$sql = "UPDATE calon_mahasiswa SET nama='$nama', alamat='$alamat', jenis_kelamin='$jk', agama='$agama', sekolah_asal='$sekolah' WHERE id=$id";
+	$sql = "UPDATE calon_mahasiswa SET
+			nama = '$nama', 
+			alamat = '$alamat', 
+			jenis_kelamin = '$jk', 
+			agama = '$agama',
+			sekolah_asal = '$sekolah'
+			WHERE id = '$id'";
 	$query = mysqli_query($kon, $sql);
 	
 	// apakah query update berhasil?

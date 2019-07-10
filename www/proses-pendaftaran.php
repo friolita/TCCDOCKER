@@ -14,16 +14,22 @@ if(isset($_POST['daftar'])){
 	$sekolah = $_POST['sekolah_asal'];
 	
 	// buat query
-	$sql = "INSERT INTO calon_mahasiswa(id, nama, alamat, jenis_kelamin, agama, sekolah_asal) VALUE ('$id', '$nama', '$alamat', '$jk', '$agama', '$sekolah')";
+	$sql = "INSERT INTO calon_mahasiswa SET
+			id = '$id', 
+			nama = '$nama', 
+			alamat = '$alamat', 
+			jenis_kelamin = '$jk', 
+			agama = '$agama',
+			sekolah_asal = '$sekolah'";
 	$query = mysqli_query($kon, $sql);
 	
 	// apakah query simpan berhasil?
 	if( $query ) {
 		// kalau berhasil alihkan ke halaman index.php dengan status=sukses
-		header('location: index.php?status=sukses');
+		header('location: index.php');
 	} else {
 		// kalau gagal alihkan ke halaman indek.ph dengan status=gagal
-		header('location: index.php?status=gagal');
+		header('location: index.php');
 	}
 	
 	
