@@ -14,7 +14,7 @@ if(isset($_POST['simpan'])){
 	$sekolah = $_POST['sekolah_asal'];
 	
 	// buat query update
-	$sql = "UPDATE calon_mahasiswa SET
+	$sql = "UPDATE calon_siswa SET
 			nama = '$nama', 
 			alamat = '$alamat', 
 			jenis_kelamin = '$jk', 

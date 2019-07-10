@@ -14,7 +14,7 @@ if(isset($_POST['daftar'])){
 	$sekolah = $_POST['sekolah_asal'];
 	
 	// buat query
-	$sql = "INSERT INTO calon_mahasiswa SET
+	$sql = "INSERT INTO calon_siswa SET
 			id = '$id', 
 			nama = '$nama', 
 			alamat = '$alamat', 

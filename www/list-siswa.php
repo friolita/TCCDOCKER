@@ -33,7 +33,7 @@
 	<tbody>
 		
 		<?php
-		$sql = "SELECT * FROM calon_mahasiswa";
+		$sql = "SELECT * FROM calon_siswa";
 		$query = mysqli_query($kon, $sql);
 		
 		while($siswa = mysqli_fetch_array($query)){
