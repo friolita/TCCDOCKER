@@ -6,6 +6,7 @@ $kon = mysqli_connect('db', 'user', 'test', 'pendaftaran_siswa');
 if(isset($_POST['daftar'])){
 	
 	// ambil data dari formulir
+	$id = $_POST['id'];
 	$nama = $_POST['nama'];
 	$alamat = $_POST['alamat'];
 	$jk = $_POST['jenis_kelamin'];
@@ -13,7 +14,7 @@ if(isset($_POST['daftar'])){
 	$sekolah = $_POST['sekolah_asal'];
 	
 	// buat query
-	$sql = "INSERT INTO calon_mahasiswa(nama, alamat, jenis_kelamin, agama, sekolah_asal) VALUE ('$nama', '$alamat', '$jk', '$agama', '$sekolah')";
+	$sql = "INSERT INTO calon_mahasiswa(id, nama, alamat, jenis_kelamin, agama, sekolah_asal) VALUE ('$id', '$nama', '$alamat', '$jk', '$agama', '$sekolah')";
 	$query = mysqli_query($kon, $sql);
 	
 	// apakah query simpan berhasil?

@@ -38,7 +38,7 @@ if( mysqli_num_rows($query) < 1 ){
 		
 		<fieldset>
 			
-			<input type="hidden" name="id" value="<?php echo $siswa['id'] ?>" />
+			<input type="hidden" name="id" value="<?php echo $siswa['id'] ?>" readonly />
 		
 		<p>
 			<label for="nama">Nama: </label>
