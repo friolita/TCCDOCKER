@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `calon_siswa` (
-  `id` int(11) NOT NULL,
+  `id` varchar(11) NOT NULL,
   `nama` varchar(64) NOT NULL,
   `alamat` varchar(255) NOT NULL,
   `jenis_kelamin` varchar(16) NOT NULL,
