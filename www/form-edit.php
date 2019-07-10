@@ -4,7 +4,7 @@ $kon = mysqli_connect('db', 'user', 'test', 'pendaftaran_siswa');
 
 if( !isset($_GET['id']) ){
 	// kalau tidak ada id di query string
-	header('Location: list-siswa.php');
+	header('location: list-siswa.php');
 }
 
 //ambil id dari query string

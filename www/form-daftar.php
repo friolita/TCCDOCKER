@@ -32,11 +32,11 @@
 		<p>
 			<label for="agama">Agama: </label>
 			<select name="agama">
-				<option>Islam</option>
-				<option>Kristen</option>
-				<option>Hindu</option>
-				<option>Budha</option>
-				<option>Atheis</option>
+				<option value="Islam">Islam</option>
+				<option value="Kristen">Kristen</option>
+				<option value="Hindu">Hindu</option>
+				<option value="Budha">Budha</option>
+				<option value="Atheis">Atheis</option>
 			</select>
 		</p>
 		<p>
