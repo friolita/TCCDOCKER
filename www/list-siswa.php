@@ -1,4 +1,4 @@
-<?php include("config.php"); ?>
+<?php $kon = mysqli_connect('db', 'user', 'test', 'pendaftaran_siswa'); ?>
 
 
 <!DOCTYPE html>
@@ -34,7 +34,7 @@
 		
 		<?php
 		$sql = "SELECT * FROM calon_mahasiswa";
-		$query = mysqli_query($db, $sql);
+		$query = mysqli_query($kon, $sql);
 		
 		while($siswa = mysqli_fetch_array($query)){
 			echo "<tr>";
