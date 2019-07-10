@@ -1,6 +1,6 @@
 <?php 
 
-include("config.php");
+$kon = mysqli_connect('db', 'user', 'test', 'pendaftaran_siswa');
 
 if( !isset($_GET['id']) ){
 	// kalau tidak ada id di query string
@@ -12,7 +12,7 @@ $id = $_GET['id'];
 
 // buat query untuk ambil data dari database
 $sql = "SELECT * FROM calon_mahasiswa WHERE id=$id";
-$query = mysqli_query($db, $sql);
+$query = mysqli_query($kon, $sql);
 $siswa = mysqli_fetch_assoc($query);
 
 // jika data yang di-edit tidak ditemukan
